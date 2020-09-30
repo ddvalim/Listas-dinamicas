@@ -64,7 +64,7 @@ class Lista:
                 i = self.__primeiro_elemento
                 while i != elemento:
                     if i == None:
-                        break
+                        raise Exception ('O elemento não está na lista!')
                     else:
                         i = i.__get_proximo()
                 return i == elemento
@@ -91,4 +91,5 @@ print(l.consulta_por_elemento(e))
 print(l.consulta_por_posicao(1))
 
 l.remove_elemento(h)
-print(l.consulta_por_elemento(h)) #Está crashando ao remover elemento inexistente
+print(l.consulta_por_elemento(h)) #Está crashando ao consultar elemento inexistente
+l.remove_elemento(h) #Está crashando ao remover elemento inexistente
