@@ -10,7 +10,7 @@
 </h1>
 <h4 align="center"> 🚀 Concluido 🚀 </h4>
 
-### Tecnologias
+### Tecnologia
 
 O exercício foi desenvolvido utilizando a linguagem Python e a técnica de encadeamento com alocação dinâmica.
 
