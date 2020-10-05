@@ -43,7 +43,10 @@ class Lista:
 
         else:
             i = self.__primeiro_elemento
-            while i.get_proximo() != elemento:
+            if i == None:
+                raise Exception('O elemento não está na lista!')
+
+            while i != elemento:
                 if i == None:
                     raise Exception('O elemento não está na lista!')
                 else:
@@ -56,6 +59,7 @@ class Lista:
             self.__numero_elementos -= 1
             return temp
 
+
     def consulta_por_elemento(self, elemento:object):
         if isinstance(elemento, Elemento):
             if elemento == self.__primeiro_elemento or elemento == self.__ultimo_elemento:
@@ -64,11 +68,15 @@ class Lista:
                 i = self.__primeiro_elemento
                 while i != elemento:
                     if i == None:
-                        raise Exception ('O elemento não está na lista!')
+                        raise Exception('O elemento não está na lista!')
                     else:
-                        i = i.__get_proximo()
+                        i = i.get_proximo()
+                        
                 return i == elemento
-    
+        else:
+            raise Exception('O parâmetro dado não é do tipo Elemento')
+
+
     def consulta_por_posicao(self, posicao:int):
         i = self.__primeiro_elemento
         for x in range(posicao):
@@ -91,5 +99,5 @@ print(l.consulta_por_elemento(e))
 print(l.consulta_por_posicao(1))
 
 l.remove_elemento(h)
-print(l.consulta_por_elemento(h)) #Está crashando ao consultar elemento inexistente
-l.remove_elemento(h) #Está crashando ao remover elemento inexistente
+print(l.consulta_por_elemento(h))
+l.remove_elemento(h) 
