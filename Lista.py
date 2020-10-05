@@ -38,6 +38,7 @@ class Lista:
                 i = i.get_proximo()
             
             self.__ultimo_elemento = i
+            self.__numero_elementos -= 1
             i.set_proximo(None)
             return ('Elemento removido!')
 
