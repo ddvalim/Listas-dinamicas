@@ -1,4 +1,4 @@
-<h1 align="center">💻 Lista encadeadas com alocação dinâmica 💻 </h1>
+<h1 align="center">💻 Lista encadeada com alocação dinâmica 💻 </h1>
 <p align="center">🚀 Exercício de ESTRUTURA DE DADOS - INE5609 🚀</p>
 <p align="center">
  <a href="#tecnologias">Tecnologia</a> • 
