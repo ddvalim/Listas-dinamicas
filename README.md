@@ -16,4 +16,4 @@ O exercício foi desenvolvido utilizando a linguagem Python e a técnica de enca
 
 ### Autor
 
-A autora do projeto é Diovana Rodrigues Valim, graduanda da terceira fase de Sistemas de Informação na Universidade Federal de Santa Catarina. Possuindo conhecimentos em Python, Java, Javascript, React, HTML e CSS desenvolveu esta aplicação web para concorrer à vaga de bolsista do Laboratório Bridge.
+A autora do projeto é Diovana Rodrigues Valim, graduanda da terceira fase de Sistemas de Informação na Universidade Federal de Santa Catarina. O exercício foi desenvolvido para teste de conhecimento da disciplina INE5609 - Estrutura de Dados
